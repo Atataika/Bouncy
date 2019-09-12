@@ -1,0 +1,133 @@
+@import "./variables.scss";
+@import "./fonts.scss";
+
+body {
+    // display: flex;
+    // justify-content: center;
+    // flex-wrap: wrap;
+
+    .row-1 {
+        // width: 1365px;
+        width: 100%;
+        height: 700px;
+        background-image: url("../../out/images/Layer\ 2.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding-top: 10px;
+        // padding-top: 10px;
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 6.2em;
+
+            .logo {
+                font-size: 24px;
+                font-family: 'Big John', sans-serif;
+                text-transform: uppercase;
+                font-weight: bold;
+                color: $mainFontColor;
+                text-decoration-line: none;
+                transition-duration: .3s;
+
+                &:hover {
+                    color: darken($mainFontColor, 8);
+                }
+            }
+
+            nav {
+                button {
+                    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+                    font-size: 16px;
+                    width: 80px;
+                    height: 33px;
+                    border-radius: 16.5px;
+                    border: solid 1px #fff;
+                    background-color: #ffffff00;
+                    color: $mainFontColor;
+                    transition: .5s;
+
+                    &:hover {
+                        color: #000;
+                        background-color: #fff;
+                    }
+                }
+
+                a {
+                    margin-left: 1.54em;
+                    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+                    font-size: 16px;
+                    text-decoration-line: none;
+                    color: $mainFontColor;
+
+                    &:first-of-type {
+                        margin-left: 1.13em;
+                    }
+
+                    &:hover {
+                        color: darken($mainFontColor, 17);
+                    }
+                }
+            }
+        }
+
+        section {
+            text-align: center;
+
+            h1 {
+                font-family: "Source Sans Pro", sans-serif;
+                text-transform: uppercase;
+                font-weight: 100;
+                font-size: 35px;
+                letter-spacing: .19em;
+                color: $mainFontColor;
+                padding-top: 190px;
+            }
+
+            p {
+                font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-size: 16px;
+                font-weight: 100;
+                letter-spacing: .065em;
+                line-height: 1.75;
+                color: $mainFontColor;
+                padding: .3em 25% 0;
+            }
+        }
+
+        .row-1__proceed-button {
+            position: relative;
+            top: 12.45em;
+            left: 48.7%;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background-color: $mainBackgroundColor;
+            transition: .3s;
+
+            &:hover {
+                background-color: lighten($mainBackgroundColor, 4);
+                height: 50px;
+                border-radius: 47%;
+
+                div {
+                    border-left: 2px solid $mainFontColor;
+                    border-bottom: 2px solid $mainFontColor;
+                }
+            }
+
+            div {
+                position: absolute;
+                top: 30%;
+                left: 38%;
+                width: 7px;
+                height: 7px;
+                border-left: 1.4px solid $mainFontColor;
+                border-bottom: 1.4px solid $mainFontColor;
+                transform: rotate(-45deg);
+            }
+        }
+    }
+}
