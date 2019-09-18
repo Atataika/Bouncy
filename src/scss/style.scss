@@ -18,6 +18,7 @@ body {
         &:hover {
             color: #333b46;
             background-color: $mainFontColor;
+            cursor: pointer;
         }
 
         &:active {
@@ -31,7 +32,7 @@ body {
         height: 700px;
         background-image: url("../../out/images/Layer\ 2.png");
         background-repeat: no-repeat;
-        background-position: center;
+        background-position: bottom;
         background-size: cover;
         padding-top: 10px;
 
@@ -111,6 +112,7 @@ body {
             transition: .3s;
 
             &:hover {
+                cursor: pointer;
                 background-color: lighten($mainBackgroundColor, 4);
                 height: 50px;
                 border-radius: 47%;
@@ -153,6 +155,7 @@ body {
             }
 
             p {
+                color: #81868e;
                 font-family: $openSans;
                 font-size: .95em;
                 letter-spacing: .01em;
@@ -182,13 +185,154 @@ body {
         }
     }
 
-    // .row-3 {
-    //     text-align: center;
-    //     background-color: $secondBackgroundColor;
-    //     height: 618px;
+    .row-3 {
+        text-align: center;
+        background-color: $secondBackgroundColor;
+        height: 618px;
 
-    //     h2 {
-    //         padding: 80px 0 0 0;
-    //     }
-    // }
+        h2 {
+            color: #333b46;
+            font-family: $sourceSansPro;
+            font-weight: 400;
+            font-size: 1.39em;
+            text-transform: uppercase;
+            letter-spacing: .125em;
+            padding-top: 3.31em;
+            margin-top: 0;
+        }
+
+        p {
+            color: #81868e;
+            font-family: $openSans;
+            font-size: .9em;
+            line-height: 1.79;
+            letter-spacing: .035em;
+            margin: 2.05em 32% 2em 31.5%;
+        }
+
+        .img-flex-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 3.5em;
+
+            div {
+                background-color: #81868e;
+                border-radius: 50%;
+                width: 53px;
+                height: 53px;
+                transition: .3s;
+
+                &:hover {
+                    background-color: #19bd9a;
+                }
+            }
+
+            div:nth-of-type(2) {
+                margin: 0 1.7em 0 1.7em;
+            }
+
+            .img-flex-container__first-image {
+                padding-top: 30%;
+            }
+
+            .img-flex-container__second-image {
+                padding-top: 20%;
+            }
+
+            .img-flex-container__third-image {
+                padding-top: 20%;
+            }
+        }
+
+        .creative-ideas {
+            padding: 0 13% 0 12.3%;
+            text-align: left;
+
+            .creative-ideas__caption {
+                color: #464646;
+                font-family: $openSans;
+                font-size: 1.25em;
+                font-weight: normal;
+                letter-spacing: 0.8px;
+                margin-top: 2.85em;
+                margin-bottom: 1.4em;
+            }
+
+            .creative-ideas__accent-green {
+                color: #19bd9a;
+            }
+
+            div {
+                display: flex;
+
+                .creative-ideas__first-idea {
+                    font-size: 1.025em;
+                    line-height: 1.74em;
+                    margin: 0 0 0 .1em;
+                    width: 325px;
+                    vertical-align: top;
+                    margin-right: 7.6em;
+                }
+
+                .creative-ideas__second-idea {
+                    display: inline-block;
+                    width: 515px;
+                    overflow-wrap: break-word;
+                    word-wrap: break-word;
+                    margin: 0;
+                }
+            }
+        }
+    }
+
+    .row-4 {
+        text-align: center;
+        height: 667px;
+
+        h2 {
+            color: #333b46;
+            font-family: $sourceSansPro;
+            font-weight: 400;
+            font-size: 1.39em;
+            text-transform: uppercase;
+            letter-spacing: .13em;
+            padding-top: 3.31em;
+            margin-top: 0;
+        }
+
+        p {
+            color: #81868e;
+            font-family: $openSans;
+            font-size: .9em;
+            line-height: 1.79;
+            letter-spacing: .035em;
+            margin: 2.05em 32% 3.95em 31.5%;
+        }
+
+        .featured-projects__gallery {
+            display: flex;
+            flex-wrap: wrap;
+
+            img:nth-of-type(3) {
+                margin-left: -6px;
+            }
+        }
+
+        .row-4__footer {
+            display: flex;
+            width: 100%;
+            height: 113px;
+            background-image: url("../images/Featured_footer.png");
+            align-items: center;
+            padding: 0 170px 0 164px;
+
+            span {
+                font-family: $openSans;
+                font-size: 20px;
+                letter-spacing: 0.8px;
+                color: #ffffff;
+                margin-right: 7.5em;
+            }
+        }
+    }
 }
