@@ -2,29 +2,29 @@
 @import "./fonts.scss";
 
 body {
-    // width: 1365px;
+    width: 1365px;
 
     button {
-        font-family: $openSans;
+        font-family: $open-sans;
         font-size: 16px;
         height: 33px;
         border-radius: 16.5px;
-        border: solid 1px $mainFontColor;
-        background-color: #333b4600;
-        color: $mainFontColor;
+        border: solid 1px $alternative-font-color;
+        background-color: #00000000;
+        color: $alternative-font-color;
         padding: 0 1.23em;
         transition: .5s;
 
         &:hover {
-            color: #333b46;
-            background-color: $mainFontColor;
+            color: $caption-color;
+            background-color: $alternative-font-color;
             cursor: pointer;
         }
 
         &:active {
             transition: .1s;
-            border-color: darken($mainFontColor, 25);
-            background-color: darken($mainFontColor, 15);
+            border-color: darken($alternative-font-color, 25);
+            background-color: darken($alternative-font-color, 15);
         }
     }
 
@@ -40,20 +40,18 @@ body {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            padding: 0 6.13em;
+            padding: 0 6.125em 0 6em;
 
             .logo {
-                font-size: 24px;
-                font-family: $bigJohns;
-                font-weight: bold;
-                letter-spacing: .015em;
+                font-size: 1.55em;
+                font-family: $big-johns;
                 text-transform: uppercase;
                 text-decoration-line: none;
-                color: $mainFontColor;
+                color: $alternative-font-color;
                 transition-duration: .3s;
 
                 &:hover {
-                    color: darken($mainFontColor, 8);
+                    color: darken($alternative-font-color, 8);
                 }
             }
 
@@ -61,17 +59,17 @@ body {
 
                 a {
                     margin-left: 1.57em;
-                    font-family: $openSans;
+                    font-family: $open-sans;
                     font-size: 16px;
                     text-decoration-line: none;
-                    color: $mainFontColor;
+                    color: $alternative-font-color;
 
                     &:first-of-type {
                         margin-left: 1.1em;
                     }
 
                     &:hover {
-                        color: darken($mainFontColor, 17);
+                        color: darken($alternative-font-color, 17);
                     }
                 }
             }
@@ -81,22 +79,22 @@ body {
             text-align: center;
 
             h1 {
-                font-family: $sourceSansPro;
+                font-family: $source-sans-pro;
                 text-transform: uppercase;
                 font-weight: 100;
                 font-size: 35px;
                 letter-spacing: .205em;
-                color: $mainFontColor;
+                color: $alternative-font-color;
                 margin: 213px 0 0 9px;
             }
 
             p {
-                font-family: $openSans;
+                font-family: $open-sans;
                 font-size: 16px;
                 font-weight: 100;
                 letter-spacing: .067em;
                 line-height: 1.75;
-                color: $mainFontColor;
+                color: $alternative-font-color;
                 margin: 1.75em 25% 0 25.1%;
             }
         }
@@ -108,18 +106,18 @@ body {
             width: 36px;
             height: 36px;
             border-radius: 50%;
-            background-color: $mainBackgroundColor;
+            background-color: $main-style-color;
             transition: .3s;
 
             &:hover {
                 cursor: pointer;
-                background-color: lighten($mainBackgroundColor, 4);
+                background-color: lighten($main-style-color, 6);
                 height: 50px;
                 border-radius: 47%;
 
                 div {
-                    border-left: 2px solid $mainFontColor;
-                    border-bottom: 2px solid $mainFontColor;
+                    border-left: 2px solid $alternative-font-color;
+                    border-bottom: 2px solid $alternative-font-color;
                 }
             }
 
@@ -129,8 +127,8 @@ body {
                 left: 38.5%;
                 width: 7px;
                 height: 7px;
-                border-left: 1.4px solid $mainFontColor;
-                border-bottom: 1.4px solid $mainFontColor;
+                border-left: 1.4px solid $alternative-font-color;
+                border-bottom: 1.4px solid $alternative-font-color;
                 transform: rotate(-45deg);
             }
         }
@@ -140,13 +138,14 @@ body {
         height: (30.5em - 5.6em);
         display: flex;
         padding-top: 5.6em;
+        // justify-content: space-between;
 
         div {
             flex-basis: 35%;
             margin-left: 16.5em;
 
             h2 {
-                font-family: $sourceSansPro;
+                font-family: $source-sans-pro;
                 text-transform: uppercase;
                 font-weight: normal;
                 font-size: 22px;
@@ -155,8 +154,8 @@ body {
             }
 
             p {
-                color: #81868e;
-                font-family: $openSans;
+                color: $text-color;
+                font-family: $open-sans;
                 font-size: .95em;
                 letter-spacing: .01em;
                 line-height: 1.68em;
@@ -167,13 +166,13 @@ body {
                 width: 8.75em;
                 height: 2.3em;
                 border-radius: 20px;
-                border-color: $secondFontColor;
-                color: $secondFontColor;
+                border-color: $caption-color;
+                color: $caption-color;
                 margin: .85em 0 0 2px;
 
                 &:hover {
-                    background-color: $secondFontColor;
-                    color: $mainFontColor;
+                    background-color: $caption-color;
+                    color: $alternative-font-color;
                 }
             }
         }
@@ -187,12 +186,12 @@ body {
 
     .row-3 {
         text-align: center;
-        background-color: $secondBackgroundColor;
+        background-color: $second-background-color;
         height: 618px;
 
         h2 {
-            color: #333b46;
-            font-family: $sourceSansPro;
+            color: $caption-color;
+            font-family: $source-sans-pro;
             font-weight: 400;
             font-size: 1.39em;
             text-transform: uppercase;
@@ -202,8 +201,8 @@ body {
         }
 
         p {
-            color: #81868e;
-            font-family: $openSans;
+            color: $text-color;
+            font-family: $open-sans;
             font-size: .9em;
             line-height: 1.79;
             letter-spacing: .035em;
@@ -216,14 +215,14 @@ body {
             margin-top: 3.5em;
 
             div {
-                background-color: #81868e;
+                background-color: $second-style-color;
                 border-radius: 50%;
                 width: 53px;
                 height: 53px;
                 transition: .3s;
 
                 &:hover {
-                    background-color: #19bd9a;
+                    background-color: $main-style-color;
                 }
             }
 
@@ -249,8 +248,8 @@ body {
             text-align: left;
 
             .creative-ideas__caption {
-                color: #464646;
-                font-family: $openSans;
+                color: $subcaption-color;
+                font-family: $open-sans;
                 font-size: 1.25em;
                 font-weight: normal;
                 letter-spacing: 0.8px;
@@ -259,7 +258,7 @@ body {
             }
 
             .creative-ideas__accent-green {
-                color: #19bd9a;
+                color: $main-style-color;
             }
 
             div {
@@ -290,8 +289,8 @@ body {
         height: 667px;
 
         h2 {
-            color: #333b46;
-            font-family: $sourceSansPro;
+            color: $caption-color;
+            font-family: $source-sans-pro;
             font-weight: 400;
             font-size: 1.39em;
             text-transform: uppercase;
@@ -301,8 +300,8 @@ body {
         }
 
         p {
-            color: #81868e;
-            font-family: $openSans;
+            color: $text-color;
+            font-family: $open-sans;
             font-size: .9em;
             line-height: 1.79;
             letter-spacing: .035em;
@@ -327,10 +326,10 @@ body {
             padding: 0 170px 0 164px;
 
             span {
-                font-family: $openSans;
+                font-family: $open-sans;
                 font-size: 20px;
                 letter-spacing: 0.8px;
-                color: #ffffff;
+                color: $alternative-font-color;
                 margin-right: 7.5em;
             }
         }
