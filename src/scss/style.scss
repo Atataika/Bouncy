@@ -2,7 +2,7 @@
 @import "./fonts.scss";
 
 body {
-    width: 1365px;
+    // width: 1365px;
 
     button {
         font-family: $open-sans;
@@ -135,31 +135,30 @@ body {
     }
 
     .row-2 {
-        height: (30.5em - 5.6em);
+        height: 407px;
         display: flex;
-        padding-top: 5.6em;
-        // justify-content: space-between;
+        justify-content: space-between;
+        padding: 80px 253px 0 265px;
 
         div {
-            flex-basis: 35%;
-            margin-left: 16.5em;
+            max-width: 470px;
 
             h2 {
                 font-family: $source-sans-pro;
                 text-transform: uppercase;
                 font-weight: normal;
                 font-size: 22px;
-                letter-spacing: .14em;
-                margin-left: 2.5px;
+                letter-spacing: .144em;
+                margin: 28px 0 0 1px;
             }
 
             p {
                 color: $text-color;
                 font-family: $open-sans;
                 font-size: .95em;
-                letter-spacing: .01em;
+                letter-spacing: .008em;
                 line-height: 1.68em;
-                margin-top: 2.45em;
+                margin-top: 37px;
             }
 
             button {
@@ -180,39 +179,42 @@ body {
         img {
             width: 215px;
             height: 350px;
-            margin: -0.6em 0 0 9.7em;
         }
     }
 
     .row-3 {
+        box-sizing: border-box;
         text-align: center;
-        background-color: $second-background-color;
         height: 618px;
+        background-color: $second-background-color;
+        padding-top: 55px;
 
         h2 {
             color: $caption-color;
             font-family: $source-sans-pro;
-            font-weight: 400;
-            font-size: 1.39em;
+            font-weight: 500;
+            font-size: 1.4em;
             text-transform: uppercase;
             letter-spacing: .125em;
-            padding-top: 3.31em;
-            margin-top: 0;
+            margin-bottom: 29px;
         }
 
-        p {
+        .p {
+            //////////////// Костыль
             color: $text-color;
             font-family: $open-sans;
             font-size: .9em;
             line-height: 1.79;
             letter-spacing: .035em;
-            margin: 2.05em 32% 2em 31.5%;
+        }
+
+        .p_caption {
+            margin: 29px 32% 56px 31.5%;
         }
 
         .img-flex-container {
             display: flex;
             justify-content: center;
-            margin-top: 3.5em;
 
             div {
                 background-color: $second-style-color;
@@ -244,7 +246,7 @@ body {
         }
 
         .creative-ideas {
-            padding: 0 13% 0 12.3%;
+            padding: 37px 231px 0 168px;
             text-align: left;
 
             .creative-ideas__caption {
@@ -253,8 +255,7 @@ body {
                 font-size: 1.25em;
                 font-weight: normal;
                 letter-spacing: 0.8px;
-                margin-top: 2.85em;
-                margin-bottom: 1.4em;
+                margin-bottom: 15px;
             }
 
             .creative-ideas__accent-green {
@@ -263,14 +264,14 @@ body {
 
             div {
                 display: flex;
+                justify-content: space-between;
+                align-items: baseline;
 
                 .creative-ideas__first-idea {
                     font-size: 1.025em;
                     line-height: 1.74em;
                     margin: 0 0 0 .1em;
                     width: 325px;
-                    vertical-align: top;
-                    margin-right: 7.6em;
                 }
 
                 .creative-ideas__second-idea {
@@ -278,7 +279,6 @@ body {
                     width: 515px;
                     overflow-wrap: break-word;
                     word-wrap: break-word;
-                    margin: 0;
                 }
             }
         }
