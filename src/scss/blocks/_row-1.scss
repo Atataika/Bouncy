@@ -1,0 +1,49 @@
+.row-1 {
+    box-sizing: border-box;
+    height: 737px;
+    background: url("../../out/images/Layer\ 2.png") bottom/cover no-repeat;
+    padding-top: 39px;
+
+    &__caption {
+        margin: 213px 0 0 9px;
+    }
+
+    &__text {
+        margin: 1.75em 25% 0 25.1%;
+    }
+
+    // Кнопку ещё нужно переделать
+    .row-1__proceed-button {
+        position: relative;
+        margin-top: 13.5em;
+        left: 48.7%;
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        background-color: $main-style-color;
+        transition: .3s;
+
+        &:hover {
+            cursor: pointer;
+            background-color: lighten($main-style-color, 6);
+            height: 50px;
+            border-radius: 47%;
+
+            div {
+                border-left: 2px solid $alternative-font-color;
+                border-bottom: 2px solid $alternative-font-color;
+            }
+        }
+
+        div {
+            position: absolute;
+            top: 30%;
+            left: 38.5%;
+            width: 7px;
+            height: 7px;
+            border-left: 1.4px solid $alternative-font-color;
+            border-bottom: 1.4px solid $alternative-font-color;
+            transform: rotate(-45deg);
+        }
+    }
+}

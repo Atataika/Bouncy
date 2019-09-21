@@ -11,86 +11,93 @@
 </head>
 
 <body>
-    <div class="row-1">
-        <header>
-            <a href="#" class="logo">Bouncy</a>
-            <nav>
-                <button>Hello</button>
-                <a href="#about">About</a>
-                <a href="#">Services</a>
-                <a href="#">Portfolio</a>
-                <a href="#">Team</a>
-                <a href="#">Blog</a>
-                <a href="#">Contact</a>
-            </nav>
-        </header>
-        <section>
-            <h1>We are code cafe</h1>
-            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum</p>
-        </section>
-        <div class="row-1__proceed-button">
-            <div></div>
-        </div>
-    </div>
-
-    <div class="row-2">
-        <div>
-            <h2>This is Bouncy</h2>
-            <p>
+    <main>
+        <section class="row-1">
+            <header class="header">
+                <a href="#" class="header__logo logo">Bouncy</a>
+                <nav class="header__nav">
+                    <button class="header__button button button_small">Hello</button>
+                    <a href="#about" class="header__link text text_medium text__link">About</a>
+                    <a href="#services" class="header__link text text_medium text__link">Services</a>
+                    <a href="#portfolio" class="header__link text text_medium text__link">Portfolio</a>
+                    <a href="#team" class="header__link text text_medium text__link">Team</a>
+                    <a href="#blog" class="header__link text text_medium text__link">Blog</a>
+                    <a href="#contact" class="header__link text text_medium text__link">Contact</a>
+                </nav>
+            </header>
+            <h1 class="row-1__caption caption caption_main">We are code cafe</h1>
+            <p class="row-1__text text text_medium text_white text_center">
                 At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
-                deleniti
-                atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident,
-                similique
-                sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum
-                facilis est et expedita distinctio.
             </p>
-            <button>Read More</button>
-        </div>
-        <img src="./images/IPAD.png" alt="Nope">
-    </div>
+            <div class="row-1__proceed-button">
+                <div></div>
+            </div>
+        </section>
 
-    <div class="row-3">
-        <h2>Details about bouncy</h2>
-        <p class="p p_caption">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
-        <div class="img-flex-container">
-            <div><img src="./images/hearthico.png" alt="Nope1" class="img-flex-container__first-image"></div>
-            <div><img src="./images/mouseico.png" alt="Nope2" class="img-flex-container__second-image"></div>
-            <div><img src="./images/ideaico.png" alt="Nope3" class="img-flex-container__third-image"></div>
-        </div>
-        <div class="creative-ideas">
-            <h3 class="creative-ideas__caption">Creative Ideas</h3>
+        <!-- Структуру ниже не трогал ещё -->
+        <section class="row-2">
             <div>
-                <p class="p creative-ideas__first-idea">
-                    At <strong class="creative-ideas__accent-green">vero</strong> eos et accusamus et iusto odio
-                    dignissimos
-                    <strong>ducimus</strong> qui blanditiis praesentium voluptatum deleniti atque
-                    corrupti quos dolores
+                <h2>This is Bouncy</h2>
+                <p class="text">
+                    At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+                    deleniti
+                    atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident,
+                    similique
+                    sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem
+                    rerum
+                    facilis est et expedita distinctio.
                 </p>
-                <p class="p creative-ideas__second-idea">
-                    At vero eos et accusamus et iusto odio dignissimos ducimus qui blan-ditiis praesentium voluptatum
-                    deleniti atque <strong>corrupti quos</strong> dolores et quas molestias
-                    <strong class="creative-ideas__accent-green"> excepturi</strong> sint occaecati cupiditate non
-                    provident, <strong>simi-lique</strong> sunt in culpa qui officia deserunt mollitia animi, id est
-                    laborum et dolorum fuga.
-                </p>
+                <button class="button button_black">Read More</button>
             </div>
-        </div>
-    </div>
+            <img src="./images/IPAD.png" alt="Nope">
+        </section>
 
-    <div class="row-4">
-        <h2>Featured projects</h2>
-        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
-        <div class="featured-projects__gallery">
-            <img src="./images/Featured1.png" alt="">
-            <img src="./images/Featured2_2.png" alt="">
-            <img src="./images/Featured3_2.png" alt="">
-            <div class="row-4__footer">
-                <img src="" alt="" class="last">
-                <span>At vero eos et <strong>accusamus</strong> et iusto odio dignissimos ducimus qui blanditiis</span>
-                <button>Submit Now</button>
+        <section class="row-3">
+            <h2 id="about">Details about bouncy</h2>
+            <p class="p p_caption">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+            </p>
+            <div class="img-flex-container">
+                <div><img src="./images/hearthico.png" alt="Nope1" class="img-flex-container__first-image"></div>
+                <div><img src="./images/mouseico.png" alt="Nope2" class="img-flex-container__second-image"></div>
+                <div><img src="./images/ideaico.png" alt="Nope3" class="img-flex-container__third-image"></div>
             </div>
-        </div>
-    </div>
+            <div class="creative-ideas">
+                <h3 class="creative-ideas__caption">Creative Ideas</h3>
+                <div>
+                    <p class="text p creative-ideas__first-idea">
+                        At <strong class="creative-ideas__accent-green">vero</strong> eos et accusamus et iusto odio
+                        dignissimos
+                        <strong>ducimus</strong> qui blanditiis praesentium voluptatum deleniti atque
+                        corrupti quos dolores
+                    </p>
+                    <p class="p creative-ideas__second-idea">
+                        At vero eos et accusamus et iusto odio dignissimos ducimus qui blan-ditiis praesentium
+                        voluptatum
+                        deleniti atque <strong>corrupti quos</strong> dolores et quas molestias
+                        <strong class="creative-ideas__accent-green"> excepturi</strong> sint occaecati cupiditate non
+                        provident, <strong>simi-lique</strong> sunt in culpa qui officia deserunt mollitia animi, id est
+                        laborum et dolorum fuga.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="row-4">
+            <h2>Featured projects</h2>
+            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+            <div class="featured-projects__gallery">
+                <img src="./images/Featured1.png" alt="">
+                <img src="./images/Featured2_2.png" alt="">
+                <img src="./images/Featured3_2.png" alt="">
+                <div class="row-4__footer">
+                    <img src="" alt="" class="last">
+                    <span>At vero eos et <strong>accusamus</strong> et iusto odio dignissimos ducimus qui
+                        blanditiis</span>
+                    <button class="button">Submit Now</button>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>

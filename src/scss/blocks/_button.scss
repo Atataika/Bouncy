@@ -1,0 +1,47 @@
+.button {
+    width: 141px;
+    padding: 0 19px;
+    height: 37px;
+    color: $alternative-font-color;
+    font-family: $open-sans;
+    font-size: 16px;
+    line-height: 0.75;
+    background-color: #ffffff00;
+    border: solid 1px $alternative-font-color;
+    border-radius: 18.5px;
+
+    transition: .5s;
+
+    &:hover {
+        color: $caption-color;
+        background-color: $alternative-font-color;
+        cursor: pointer;
+    }
+
+    &:active {
+        transition: .1s;
+        border-color: darken($alternative-font-color, 25);
+        background-color: darken($alternative-font-color, 15);
+    }
+
+    &_black {
+        color: $caption-color;
+        border-color: $caption-color;
+
+        &:hover {
+            background-color: $caption-color;
+            color: $alternative-font-color;
+        }
+
+        &:active {
+            transition: .1s;
+            border-color: darken($caption-color, 5);
+            background-color: darken($caption-color, 5);
+        }
+    }
+
+    &_small {
+        width: 80px;
+        height: 33px;
+    }
+}

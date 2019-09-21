@@ -1,0 +1,15 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 6.125em 0 6em;
+
+    &__link {
+        margin-left: 1.57em;
+    }
+
+    &__link:first-of-type {
+        margin-left: 1.1em;
+    }
+
+}

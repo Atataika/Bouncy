@@ -1,138 +1,18 @@
 @import "./variables.scss";
 @import "./fonts.scss";
 
+@import "./blocks/button";
+@import "./blocks/caption";
+@import "./blocks/text";
+@import "./blocks/logo";
+
+@import "./blocks/row-1";
+@import "./blocks/header";
+
+
+// Стили ниже не тронуты
 body {
     // width: 1365px;
-
-    button {
-        font-family: $open-sans;
-        font-size: 16px;
-        height: 33px;
-        border-radius: 16.5px;
-        border: solid 1px $alternative-font-color;
-        background-color: #00000000;
-        color: $alternative-font-color;
-        padding: 0 1.23em;
-        transition: .5s;
-
-        &:hover {
-            color: $caption-color;
-            background-color: $alternative-font-color;
-            cursor: pointer;
-        }
-
-        &:active {
-            transition: .1s;
-            border-color: darken($alternative-font-color, 25);
-            background-color: darken($alternative-font-color, 15);
-        }
-    }
-
-    .row-1 {
-        height: 700px;
-        background-image: url("../../out/images/Layer\ 2.png");
-        background-repeat: no-repeat;
-        background-position: bottom;
-        background-size: cover;
-        padding-top: 10px;
-
-        header {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 0 6.125em 0 6em;
-
-            .logo {
-                font-size: 1.55em;
-                font-family: $big-johns;
-                text-transform: uppercase;
-                text-decoration-line: none;
-                color: $alternative-font-color;
-                transition-duration: .3s;
-
-                &:hover {
-                    color: darken($alternative-font-color, 8);
-                }
-            }
-
-            nav {
-
-                a {
-                    margin-left: 1.57em;
-                    font-family: $open-sans;
-                    font-size: 16px;
-                    text-decoration-line: none;
-                    color: $alternative-font-color;
-
-                    &:first-of-type {
-                        margin-left: 1.1em;
-                    }
-
-                    &:hover {
-                        color: darken($alternative-font-color, 17);
-                    }
-                }
-            }
-        }
-
-        section {
-            text-align: center;
-
-            h1 {
-                font-family: $source-sans-pro;
-                text-transform: uppercase;
-                font-weight: 100;
-                font-size: 35px;
-                letter-spacing: .205em;
-                color: $alternative-font-color;
-                margin: 213px 0 0 9px;
-            }
-
-            p {
-                font-family: $open-sans;
-                font-size: 16px;
-                font-weight: 100;
-                letter-spacing: .067em;
-                line-height: 1.75;
-                color: $alternative-font-color;
-                margin: 1.75em 25% 0 25.1%;
-            }
-        }
-
-        .row-1__proceed-button {
-            position: relative;
-            margin-top: 13.5em;
-            left: 48.7%;
-            width: 36px;
-            height: 36px;
-            border-radius: 50%;
-            background-color: $main-style-color;
-            transition: .3s;
-
-            &:hover {
-                cursor: pointer;
-                background-color: lighten($main-style-color, 6);
-                height: 50px;
-                border-radius: 47%;
-
-                div {
-                    border-left: 2px solid $alternative-font-color;
-                    border-bottom: 2px solid $alternative-font-color;
-                }
-            }
-
-            div {
-                position: absolute;
-                top: 30%;
-                left: 38.5%;
-                width: 7px;
-                height: 7px;
-                border-left: 1.4px solid $alternative-font-color;
-                border-bottom: 1.4px solid $alternative-font-color;
-                transform: rotate(-45deg);
-            }
-        }
-    }
 
     .row-2 {
         height: 407px;
@@ -159,20 +39,6 @@ body {
                 letter-spacing: .008em;
                 line-height: 1.68em;
                 margin-top: 37px;
-            }
-
-            button {
-                width: 8.75em;
-                height: 2.3em;
-                border-radius: 20px;
-                border-color: $caption-color;
-                color: $caption-color;
-                margin: .85em 0 0 2px;
-
-                &:hover {
-                    background-color: $caption-color;
-                    color: $alternative-font-color;
-                }
             }
         }
 

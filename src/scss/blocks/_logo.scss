@@ -1,0 +1,30 @@
+.logo {
+    color: $alternative-font-color;
+    font-family: $big-johns;
+    font-size: 25px;
+    text-transform: uppercase;
+    text-decoration-line: none;
+    transition-duration: .3s;
+
+    &:hover {
+        color: darken($alternative-font-color, 12);
+    }
+
+    &:active {
+        color: darken($alternative-font-color, 40);
+        transition-duration: .1s;
+    }
+
+    &_black {
+        color: #323a45;
+
+        &:hover {
+            color: lighten(#323a45, 7);
+        }
+
+        &:active {
+            color: lighten(#323a45, 15);
+            transition-duration: .1s;
+        }
+    }
+}
