@@ -1,0 +1,23 @@
+.creative-ideas {
+    padding: 37px 231px 0 169px;
+    text-align: left;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        margin: -8px 0 0 0px; // Возможно будут проблемы
+    }
+
+    &__idea_first {
+        width: 325px;
+    }
+
+    &__idea_second {
+        width: 515px;
+    }
+
+    &__accent_green {
+        color: $main-style-color;
+    }
+}

@@ -1,0 +1,10 @@
+.link {
+    font-family: $open-sans;
+    color: $alternative-font-color;
+    font-size: 16px;
+    text-decoration-line: none;
+
+    &:hover {
+        color: darken($alternative-font-color, 17);
+    }
+}

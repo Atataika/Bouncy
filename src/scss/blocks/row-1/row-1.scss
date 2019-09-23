@@ -1,0 +1,23 @@
+@import "./blocks/row-1/logo";
+@import "./blocks/row-1/header";
+@import "./blocks/row-1/proceed-button";
+
+.row-1 {
+    box-sizing: border-box;
+    height: 737px;
+    background: url("../../out/images/Layer\ 2.png") bottom/cover no-repeat;
+    padding-top: 38px;
+
+    &__caption {
+        margin: 198px 0 0 6px;
+    }
+
+    &__text {
+        margin: 13px 25% 0 25%;
+    }
+
+    &__proceed-button {
+        margin-top: 13.5em;
+        left: 48.65%;
+    }
+}

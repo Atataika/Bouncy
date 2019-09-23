@@ -1,0 +1,32 @@
+.images-container {
+    display: flex;
+    justify-content: center;
+
+    &__image-background {
+        background-color: $second-style-color;
+        border-radius: 50%;
+        width: 53px;
+        height: 53px;
+        transition: .3s;
+
+        &:hover {
+            background-color: $main-style-color;
+        }
+
+        &_central {
+            margin: 0 27px 0 27px;
+        }
+    }
+
+    &__image_first {
+        padding-top: 16px;
+    }
+
+    &__image_second {
+        padding-top: 9px;
+    }
+
+    &__image_third {
+        padding-top: 11px;
+    }
+}

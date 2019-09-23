@@ -14,31 +14,30 @@
     <main>
         <section class="row-1">
             <header class="header">
-                <a href="#" class="header__logo logo">Bouncy</a>
+                <a href="./" class="header__logo logo">Bouncy</a>
                 <nav class="header__nav">
                     <button class="header__button button button_small">Hello</button>
-                    <a href="#about" class="header__link text text_medium text__link">About</a>
-                    <a href="#services" class="header__link text text_medium text__link">Services</a>
-                    <a href="#portfolio" class="header__link text text_medium text__link">Portfolio</a>
-                    <a href="#team" class="header__link text text_medium text__link">Team</a>
-                    <a href="#blog" class="header__link text text_medium text__link">Blog</a>
-                    <a href="#contact" class="header__link text text_medium text__link">Contact</a>
+                    <a href="#about" class="header__link link">About</a>
+                    <a href="#services" class="header__link link">Services</a>
+                    <a href="#portfolio" class="header__link link">Portfolio</a>
+                    <a href="#team" class="header__link link">Team</a>
+                    <a href="#blog" class="header__link link">Blog</a>
+                    <a href="#contact" class="header__link link">Contact</a>
                 </nav>
             </header>
             <h1 class="row-1__caption caption caption_main">We are code cafe</h1>
             <p class="row-1__text text text_medium text_white text_center">
                 At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
             </p>
-            <div class="row-1__proceed-button">
-                <div></div>
+            <div class="row-1__proceed-button proceed-button">
+                <div class="proceed-button__inner"></div>
             </div>
         </section>
 
-        <!-- Структуру ниже не трогал ещё -->
         <section class="row-2">
-            <div>
-                <h2>This is Bouncy</h2>
-                <p class="text">
+            <div class="row-2__wrapper">
+                <h2 class="row-2__caption caption caption_left">This is Bouncy</h2>
+                <p class="row-2__text text">
                     At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
                     deleniti
                     atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident,
@@ -47,34 +46,41 @@
                     rerum
                     facilis est et expedita distinctio.
                 </p>
-                <button class="button button_black">Read More</button>
+                <button class="row-2__button button button_black">Read More</button>
             </div>
-            <img src="./images/IPAD.png" alt="Nope">
+            <img src="./images/IPAD.png" alt="ipad" class="row-2__image">
         </section>
 
         <section class="row-3">
-            <h2 id="about">Details about bouncy</h2>
-            <p class="p p_caption">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+            <h2 id="about" class="row-3__caption caption">Details about bouncy</h2>
+            <p class="row-3__text text">
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                <br>
+                blanditiis praesentium
             </p>
-            <div class="img-flex-container">
-                <div><img src="./images/hearthico.png" alt="Nope1" class="img-flex-container__first-image"></div>
-                <div><img src="./images/mouseico.png" alt="Nope2" class="img-flex-container__second-image"></div>
-                <div><img src="./images/ideaico.png" alt="Nope3" class="img-flex-container__third-image"></div>
+            <div class="images-container">
+                <div class="images-container__image-background">
+                    <img src="./images/hearthico.png" alt="hearthicon" class="images-container__image_first">
+                </div>
+                <div class="images-container__image-background images-container__image-background_central">
+                    <img src="./images/mouseico.png" alt="mouseicon" class="images-container__image_second">
+                </div>
+                <div class="images-container__image-background">
+                    <img src="./images/ideaico.png" alt="ideaicon" class="images-container__image_third">
+                </div>
             </div>
             <div class="creative-ideas">
-                <h3 class="creative-ideas__caption">Creative Ideas</h3>
-                <div>
-                    <p class="text p creative-ideas__first-idea">
-                        At <strong class="creative-ideas__accent-green">vero</strong> eos et accusamus et iusto odio
-                        dignissimos
-                        <strong>ducimus</strong> qui blanditiis praesentium voluptatum deleniti atque
+                <h3 class="subcaption">Creative Ideas</h3>
+                <div class="creative-ideas__wrapper">
+                    <p class="creative-ideas__idea_first text text_medium">
+                        At <strong class="creative-ideas__accent_green">vero</strong> eos et accusamus et iusto odio
+                        dignissimos <strong>ducimus</strong> qui blanditiis praesentium voluptatum deleniti atque
                         corrupti quos dolores
                     </p>
-                    <p class="p creative-ideas__second-idea">
+                    <p class="creative-ideas__idea_second text">
                         At vero eos et accusamus et iusto odio dignissimos ducimus qui blan-ditiis praesentium
-                        voluptatum
-                        deleniti atque <strong>corrupti quos</strong> dolores et quas molestias
-                        <strong class="creative-ideas__accent-green"> excepturi</strong> sint occaecati cupiditate non
+                        voluptatum deleniti atque <strong>corrupti quos</strong> dolores et quas molestias
+                        <strong class="creative-ideas__accent_green"> excepturi</strong> sint occaecati cupiditate non
                         provident, <strong>simi-lique</strong> sunt in culpa qui officia deserunt mollitia animi, id est
                         laborum et dolorum fuga.
                     </p>

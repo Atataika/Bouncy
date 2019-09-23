@@ -1,0 +1,18 @@
+@import "./images-container";
+@import "./creative-ideas";
+
+.row-3 {
+    box-sizing: border-box;
+    text-align: center;
+    height: 618px;
+    background-color: $second-background-color;
+    padding-top: 58px;
+
+    &__text {
+        margin: 30px 6px 56px 0;
+    }
+
+    .images-container {
+        margin-left: 1px;
+    }
+}

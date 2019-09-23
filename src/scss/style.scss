@@ -1,154 +1,21 @@
 @import "./variables.scss";
 @import "./fonts.scss";
 
-@import "./blocks/button";
-@import "./blocks/caption";
-@import "./blocks/text";
-@import "./blocks/logo";
+//Common blocks
+@import "./common_blocks/button";
+@import "./common_blocks/link";
+@import "./common_blocks/caption";
+@import "./common_blocks/subcaption";
+@import "./common_blocks/text";
 
-@import "./blocks/row-1";
-@import "./blocks/header";
-
+//Main blocks
+@import "./blocks/row-1/row-1";
+@import "./blocks/row-2/row-2";
+@import "./blocks/row-3/row-3";
 
 // Стили ниже не тронуты
 body {
     // width: 1365px;
-
-    .row-2 {
-        height: 407px;
-        display: flex;
-        justify-content: space-between;
-        padding: 80px 253px 0 265px;
-
-        div {
-            max-width: 470px;
-
-            h2 {
-                font-family: $source-sans-pro;
-                text-transform: uppercase;
-                font-weight: normal;
-                font-size: 22px;
-                letter-spacing: .144em;
-                margin: 28px 0 0 1px;
-            }
-
-            p {
-                color: $text-color;
-                font-family: $open-sans;
-                font-size: .95em;
-                letter-spacing: .008em;
-                line-height: 1.68em;
-                margin-top: 37px;
-            }
-        }
-
-        img {
-            width: 215px;
-            height: 350px;
-        }
-    }
-
-    .row-3 {
-        box-sizing: border-box;
-        text-align: center;
-        height: 618px;
-        background-color: $second-background-color;
-        padding-top: 55px;
-
-        h2 {
-            color: $caption-color;
-            font-family: $source-sans-pro;
-            font-weight: 500;
-            font-size: 1.4em;
-            text-transform: uppercase;
-            letter-spacing: .125em;
-            margin-bottom: 29px;
-        }
-
-        .p {
-            //////////////// Костыль
-            color: $text-color;
-            font-family: $open-sans;
-            font-size: .9em;
-            line-height: 1.79;
-            letter-spacing: .035em;
-        }
-
-        .p_caption {
-            margin: 29px 32% 56px 31.5%;
-        }
-
-        .img-flex-container {
-            display: flex;
-            justify-content: center;
-
-            div {
-                background-color: $second-style-color;
-                border-radius: 50%;
-                width: 53px;
-                height: 53px;
-                transition: .3s;
-
-                &:hover {
-                    background-color: $main-style-color;
-                }
-            }
-
-            div:nth-of-type(2) {
-                margin: 0 1.7em 0 1.7em;
-            }
-
-            .img-flex-container__first-image {
-                padding-top: 30%;
-            }
-
-            .img-flex-container__second-image {
-                padding-top: 20%;
-            }
-
-            .img-flex-container__third-image {
-                padding-top: 20%;
-            }
-        }
-
-        .creative-ideas {
-            padding: 37px 231px 0 168px;
-            text-align: left;
-
-            .creative-ideas__caption {
-                color: $subcaption-color;
-                font-family: $open-sans;
-                font-size: 1.25em;
-                font-weight: normal;
-                letter-spacing: 0.8px;
-                margin-bottom: 15px;
-            }
-
-            .creative-ideas__accent-green {
-                color: $main-style-color;
-            }
-
-            div {
-                display: flex;
-                justify-content: space-between;
-                align-items: baseline;
-
-                .creative-ideas__first-idea {
-                    font-size: 1.025em;
-                    line-height: 1.74em;
-                    margin: 0 0 0 .1em;
-                    width: 325px;
-                }
-
-                .creative-ideas__second-idea {
-                    display: inline-block;
-                    width: 515px;
-                    overflow-wrap: break-word;
-                    word-wrap: break-word;
-                }
-            }
-        }
-    }
 
     .row-4 {
         text-align: center;
@@ -177,9 +44,38 @@ body {
         .featured-projects__gallery {
             display: flex;
             flex-wrap: wrap;
+            transition: 1s;
+
+            img {
+                transition: .5s;
+            }
+
+            img:nth-of-type(1) {
+                width: 333px;
+
+                flex: 1;
+
+                &:hover {
+                    flex: 1.3;
+                    // width: 333px*2;
+                }
+            }
+
+            img:nth-of-type(2) {
+                flex: 1;
+
+                &:hover {
+                    flex: 1.3;
+                }
+            }
 
             img:nth-of-type(3) {
+                flex: 1;
                 margin-left: -6px;
+
+                &:hover {
+                    flex: 1.3;
+                }
             }
         }
 

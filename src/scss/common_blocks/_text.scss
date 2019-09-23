@@ -1,0 +1,25 @@
+.text {
+    font-family: $open-sans;
+    color: $text-color;
+    font-size: 14px;
+    line-height: 1.79;
+    letter-spacing: 0.7px;
+
+    &_medium {
+        line-height: 1.75;
+        letter-spacing: 0.8px;
+        font-size: 16px;
+    }
+
+    &_big {
+        font-size: 20px;
+    }
+
+    &_white {
+        color: $alternative-font-color;
+    }
+
+    &_center {
+        text-align: center;
+    }
+}

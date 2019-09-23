@@ -2,7 +2,11 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 6.125em 0 6em;
+    padding: 0 100px 0 95px;
+
+    &__logo {
+        margin-top: -1px;
+    }
 
     &__link {
         margin-left: 1.57em;
@@ -11,5 +15,4 @@
     &__link:first-of-type {
         margin-left: 1.1em;
     }
-
 }

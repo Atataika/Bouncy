@@ -1,0 +1,41 @@
+.proceed-button {
+    display: inline-block;
+    position: relative;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: $main-style-color;
+    transition: .3s;
+
+    &:hover {
+        cursor: pointer;
+        background-color: lighten($main-style-color, 4);
+        height: 50px;
+        border-radius: 47%;
+
+        .proceed-button__inner {
+            top: 50%;
+            border-left: 2px solid $alternative-font-color;
+            border-bottom: 2px solid $alternative-font-color;
+            transition: .5s;
+        }
+    }
+
+    &:active {
+        box-sizing: border-box;
+        background-color: transparentize($main-style-color, 1);
+        border: 2px $main-style-color solid;
+        transition: .3s;
+    }
+
+    &__inner {
+        position: absolute;
+        top: 32%;
+        left: 38.5%;
+        width: 7px;
+        height: 7px;
+        border-left: 1.4px solid $alternative-font-color;
+        border-bottom: 1.4px solid $alternative-font-color;
+        transform: rotate(-45deg);
+    }
+}

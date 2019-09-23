@@ -1,0 +1,27 @@
+.row-2 {
+    height: 407px;
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 254px 0 265px;
+
+    &__wrapper {
+        max-width: 470px;
+    }
+
+    &__caption {
+        margin: 28px 0 0 1px;
+    }
+
+    &__text {
+        margin-top: 39px;
+    }
+
+    &__button {
+        margin-top: 15px;
+    }
+
+    &__image {
+        width: 215px;
+        height: 350px;
+    }
+}
